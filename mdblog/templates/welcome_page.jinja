@@ -1,34 +1,7 @@
-<html lang = "en">
-    <head>
-        <title>
-            Welcome to Jacobs  blog 
-        </title>
-        <link rel = "stylesheet" type="text/css" href={{url_for("static", filename="css/main.css")}}
-    </head>
+{% extends "main.jinja" %}
 
-    <body>
-        <header>
-            <h1> Jakub Krkoska </h1>
-        </header>
-    
-        <nav>
-            <ul class = "nav">
-                <li> <a href = "#">About</a></li>
-                <li> <a href = "#">Articles</a></li>
-                <li> <a href = "#">Admin</a></li>
-            </ul>
-        </nav>
+{% block title %} Welcome to Jacobs blog {% endblock %}
 
-        <main>
-            <blockquote>
+{% block main %}
                 rem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper ligula eget vulputate eleifend. Vestibulum in ex mi. Pellentesque at malesuada lorem, eget fermentum metus. In gravida et elit quis tempor. Quisque auctor enim in luctus fringilla. Phasellus nec risus eros. Fusce gravida arcu eget purus bibendum faucibus. a
-            </blockquote>
-        </main>
-
-        <footer>
-            <p>
-                (c) 2021 Jakub Krkoska
-            </p>
-        </footer>
-    </body>
-</html>
+{% endblock %}

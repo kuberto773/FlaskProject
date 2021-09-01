@@ -1,35 +1,7 @@
-<!doctype html>
-<html lang = "en">
-    <head>
-        <title>
-            Welcome to Jacobs  blog 
-        </title>
-        <link rel = "stylesheet" type="text/css" href={{url_for("static", filename="css/main.css")}}
-    </head>
+{% extends "main.jinja" %}
 
-    <body>
-        <header>
-            <h1> Jakub Krkoska </h1>
-        </header>
-    
-        <nav>
-            <ul class = "nav">
-                <li> <a href = "#">About</a></li>
-                <li> <a href = "#">Articles</a></li>
-                <li> <a href = "#">Admin</a></li>
-            </ul>
-        </nav>
+{% block title %} Welcome to Jacobs blog {% endblock %}
 
-        <main>
-            <blockquote>
-                About Jacob :))
-            </blockquote>
-        </main>
-
-        <footer>
-            <p>
-                (c) 2021 Jakub Krkoska
-            </p>
-        </footer>
-    </body>
-</html>
+{% block main %}
+                Hi, I am the Jacob. :)
+{% endblock %}
